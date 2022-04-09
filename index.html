@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>hardware</title>
+    <link rel="stylesheet" href="style.css" />
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://cdn4.iconfinder.com/data/icons/electronic-devices-35/32/34-cpu-hardware-512.png"
+    />
+  </head>
+  <body>
+    <center>
+      <button class="button1" type="button" onclick="myFunction()">dark</button>
+      <script>
+        function myFunction() {
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+        }
+      </script>
+      <button class="button" type="button" onclick="myFunctions()">
+        white
+      </button>
+      <script>
+        function myFunctions() {
+          document.body.style.backgroundColor = "";
+          document.body.style.color = "black";
+        }
+        function changeBG() {
+          var newColor = document.getElementById("colorPicker").value;
+          document.body.style.backgroundColor = newColor;
+        }
+      </script>
+    </center>
+    <center><h1>hardware</h1></center>
+    <ul class="navbar">
+      <li><a class="active" href="index.html">hardware</a></li>
+      <li><a href="news.html">h News</a></li>
+      <li><a href="software.html">software</a></li>
+      <li><a href="#about">s news</a></li>
+      <li><input type="color" id="colorPicker" onchange="changeBG()" /></li>
+    </ul>
+    <center>
+      <hr />
+      <img
+        src="https://www.oxfordwebstudio.com/user/pages/06.da-li-znate/sta-je-hardver/sta-je-hardver.jpg"
+        alt="computer-hardware"
+        height="40%"
+        width="25%"
+        class="ff1"
+      />
+      <hr />
+      <p>Computer hardware includes the physical parts of a computer</p>
+      <hr />
+      <a href="https://en.wikipedia.org/wiki/Computer_hardware">hardware</a>
+      <table border="2" id="hardware-table">
+        <tr>
+          <th class="cpu">cpu</th>
+          <th class="gpu">gpu</th>
+          <th class="ram">ram</th>
+          <th class="ssd">ssd</th>
+          <th class="motherboard">motherboard</th>
+        </tr>
+        <tr>
+          <td class="cpu">
+            <p>
+              A central processing unit (CPU), also called a central processor,
+              main processor or just processor, is the electronic circuitry that
+              executes instructions comprising a computer program. The CPU
+              performs basic arithmetic, logic, controlling, and input/output
+              <br />
+              (I/O) operations specified by the instructions in the program.
+              This contrasts with external components such as main memory and
+              I/O circuitry,[1] and specialized processors such as graphics
+              processing units (GPUs).
+            </p>
+          </td>
+          <td class="gpu">
+            A graphics card (also called a video card, display card, graphics
+            adapter,vga card/vga, video adapter, or display adapter) is an
+            expansion card which generates a feed of output images to a display
+            device (such as a computer monitor). Frequently, these are
+            advertised as discrete or dedicated graphics cards, emphasizing the
+            <br />
+            distinction between these and integrated graphics. At the core of
+            both is the graphics processing unit (GPU), which is the main
+            component that performs computations, but should not be confused
+            with the graphics card as a whole, although "GPU" is often used as a
+            metonymic shorthand to refer to graphics cards.
+          </td>
+          <td class="ssd">
+            <p>
+              Computer data storage is a technology consisting of computer
+              components and recording media that are used to retain digital
+              data. It is a core function and fundamental component of computers
+            </p>
+          </td>
+          <td class="ssd">
+            A solid-state drive (SSD) is a solid-state storage device that uses
+            integrated circuit assemblies to store data persistently,typically
+            using flash memory, and functioning as secondary storage in the
+            hierarchy of computer storage.
+          </td>
+          <td class="motherboard"></td>
+        </tr>
+        <hr />
+      </table>
+      <table border="2">
+        <tr>
+          <th>cpu</th>
+          <th>gpu</th>
+          <th>ram</th>
+          <th>ssd</th>
+          <th>motherboard</th>
+        </tr>
+        <tr>
+          <td>intel,amd</td>
+          <td>nvidia</td>
+          <td>hyperx</td>
+          <td>samsung</td>
+          <td>asus</td>
+        </tr>
+      </table>
+      <hr />
+      <iframe
+        width="1080"
+        height="520"
+        src="https://www.youtube.com/embed/vG_qmtdBPTU"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <hr />
+    </center>
+    <div class="footer">
+      <p>email:f@gmail.com</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>softwate news</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      href="https://cdn3.iconfinder.com/data/icons/eziconic-v1-0/256/02.png"
+    />
+  </head>
+  <body>
+    <center>
+      <button class="button1" type="button" onclick="myFunction()">dark</button>
+
+      <button class="button" type="button" onclick="myFunctions()">
+        light
+      </button>
+    </center>
+    <center>
+      <h1>software news</h1>
+      <ul class="navbar">
+        <li><a class="active" href="index.html">hardware</a></li>
+        <li><a href="news.html"> h News</a></li>
+        <li><a href="software.html">software</a></li>
+        <li><a href="new.html"> s news</a></li>
+        <li><input type="color" id="colorPicker" onchange="changeBG()" /></li>
+      </ul>
+      <div class="m1-info">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/sDs9K9U5yXxXyQkwirtM8h-1024-80.jpg.webp"
+          class="m1-img"
+        />
+        <div class="content-div">
+          <h3 class="m1-title">
+            Next Google Maps update will make traveling to new places way easier
+          </h3>
+          <p class="m1-description">
+            Google Maps will soon warn you about toll road prices, help you when
+            traveling in new places, and is adding new iOS support.
+          </p>
+        </div>
+      </div>
+
+      <div class="m1-info">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/U7QZAC4GrZ7ZfVRHSKHRyj-970-80.jpg.webp"
+          class="m1-img"
+        />
+        <div class="content-div">
+          <h3 class="m1-title">
+            It's finally happening - Twitter is working on an edit button, but
+            is this a good thing?
+          </h3>
+          <p class="m1-description">
+            Google Maps will soon warn you about toll road prices, help you when
+            traveling in new places, and is adding new iOS support.
+          </p>
+        </div>
+      </div>
+      <div class="m1-info">
+        <img
+          src="https://cdn.mos.cms.futurecdn.net/iV5qfzW6Q29n2BPXZnD69Y-970-80.jpg.webp"
+          class="m1-img"
+        />
+        <div class="content-div">
+          <h3 class="m1-title">
+            Apple's test of a new iOS subscription payment system is a huge step
+            back
+          </h3>
+          <p class="m1-description">
+            Developers of subscription-based apps on iOS devices could soon be
+            able to automatically charge renewal price increases without having
+            to ask users for permission.
+          </p>
+        </div>
+      </div>
+    </center>
+    <script>
+      function myFunction() {
+        const cardDesc = document.querySelectorAll(".m1-description");
+        const cardTitle = document.querySelectorAll(".m1-title");
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        for (let i = 0; i < cardDesc.length; i++) {
+          cardDesc[i].style.color = "black";
+          cardTitle[i].style.color = "black";
+        }
+      }
+      function myFunctions() {
+        document.body.style.backgroundColor = "#5f9ea0";
+        document.body.style.color = "black";
+      }
+      function changeBG() {
+        var newColor = document.getElementById("colorPicker").value;
+        document.body.style.backgroundColor = newColor;
+      }
+    </script>
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+  </body>
+</html>

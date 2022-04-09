@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>hardware news</title>
+    <link
+      rel="icon"
+      href="https://cdn3.iconfinder.com/data/icons/eziconic-v1-0/256/02.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <center>
+      <button class="button1" type="button" onclick="myFunction()">dark</button>
+      <button class="button" type="button" onclick="myFunctions()">
+        white
+      </button>
+    </center>
+    <center><h1>news</h1></center>
+    <ul class="navbar">
+      <li><a class="active" href="index.html">hardware</a></li>
+      <li><a href="news.html">h News</a></li>
+      <li><a href="software.html">software</a></li>
+      <li><a href="new.html">s news</a></li>
+      <li><input type="color" id="colorPicker" onchange="changeBG()" /></li>
+    </ul>
+    <div class="m1-info">
+      <img
+        src="https://cdn.mos.cms.futurecdn.net/wzS5X9GZbzcs7bd867CgmL-1024-80.png.webp"
+        class="m1-img"
+      />
+      <div class="content-div">
+        <h3 class="m1-title">Apple's M1 Ultra</h3>
+        <p class="m1-description">
+          As more Apple's Mac Studio desktops end up in the hands of curious
+          end-users, more details about their performance and features emerge.
+        </p>
+      </div>
+    </div>
+    <div class="m1-info">
+      <img
+        src="https://cdn.mos.cms.futurecdn.net/dKy36QfXBxbxoVJFP9opqf-1024-80.jpg.webp"
+        alt=""
+        class="m1-img"
+      />
+      <div class="content-div">
+        <h3 class="m1-title">Ryzen 7 5800X3D</h3>
+        <p class="m1-description">
+          The Ryzen 7 5800X3D will hit the market on April 20 at $449. Equipped
+          with AMD's 3D V-Cache technology, the Ryzen 7 5800X3D will contend
+          with the best CPUs for gaming.
+        </p>
+      </div>
+    </div>
+
+    <div class="m1-info">
+      <img
+        src="https://cdn.mos.cms.futurecdn.net/XnY48yveSRQj3QdXoQg6d6-1024-80.jpg.webp"
+        alt=""
+        class="m1-img"
+      />
+      <div class="content-div">
+        <h3 class="m1-title">Best Monitor Deals 2022: 4K, Gaming and More</h3>
+        <p class="m1-description">
+          There are lots of awesome monitor deals dropping as we speak! Here are
+          the best offers worth your hard-earned money.
+        </p>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        const cardDesc = document.querySelectorAll(".m1-description");
+        const cardTitle = document.querySelectorAll(".m1-title");
+        document.body.style.backgroundColor = "black";
+        document.body.style.color = "white";
+        for (let i = 0; i < cardDesc.length; i++) {
+          cardDesc[i].style.color = "black";
+          cardTitle[i].style.color = "black";
+        }
+      }
+      function myFunctions() {
+        document.body.style.backgroundColor = "#5f9ea0";
+        document.body.style.color = "black";
+      }
+       function changeBG() {
+          var newColor = document.getElementById("colorPicker").value;
+          document.body.style.backgroundColor = newColor;}
+    </script>
+    <div class="footer">
+      <p>Footer</p>
+    </div>
+  </body>
+</html>

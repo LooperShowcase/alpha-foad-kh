@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<head>
+    <title>software</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://static.thenounproject.com/png/581057-200.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <center>
+      <button class="button1" type="button" onclick="myFunction()">dark</button>
+      <script>
+        function myFunction() {
+          document.body.style.backgroundColor = "black";
+          document.body.style.color = "white";
+        }
+      </script>
+      <button  class="button" type="button" onclick="myFunctions()">white</button>
+      <script>
+        function myFunctions() {
+          document.body.style.backgroundColor = "";
+          document.body.style.color = "black";
+        }
+         function changeBG() {
+          var newColor = document.getElementById("colorPicker").value;
+          document.body.style.backgroundColor = newColor;}
+      </script>
+    </center>
+    <center><h1>software</h1></center>
+    <center><ul class="navbar">
+      <li><a class="active" href="index.html">hardware</a></li>
+      <li><a href="news.html">h News</a></li>
+      <li><a href="software.html">software</a></li>
+      <li><a href="new.html">s news</a></li>
+      <li><input type="color" id="colorPicker" onchange="changeBG()" /></li>
+    </ul>
+    <hr>
+    <img src="https://marvel-b1-cdn.bc0a.com/f00000000075552/www.perforce.com/sites/default/files/image/2019-06/software%20integrity%20blog.jpg" alt="" height="40%"
+        width="25%" class="ff1">
+        <hr>
+    <p> is a collection of instructions that tell a computer how to work.</p>
+    <hr>
+    <a href="https://en.wikipedia.org/wiki/Software">software</a>
+    <hr>
+    <p>At the lowest programming level, executable code consists of machine language instructions supported by an individual processor—typically a central processing unit (CPU) or a graphics processing unit (GPU).<br> Machine language consists of groups of binary values signifying processor instructions that change the state of the computer from its preceding state.</p>
+  
+ 
+    </center>
+    <div class="footer">
+  <p>Footer</p>
+</div>
+</body>
+</html>
